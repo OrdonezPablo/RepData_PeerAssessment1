@@ -76,7 +76,7 @@ head(totalsteps, 10)
 #line plot with total number of steps per day
 
 ggplot(totalsteps, aes(date, total_steps)) +
-  geom_line(color = "blue") +
+  geom_line(color = "red") +
   labs(title = "Total Steps per Day", x = "Date", y = "Steps")
 ```
 
