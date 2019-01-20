@@ -80,7 +80,7 @@ ggplot(totalsteps, aes(date, total_steps)) +
   labs(title = "Total Steps per Day", x = "Date", y = "Steps")
 ```
 
-![](PA1_template_files/figure-html/mean steps-1.png)<!-- -->
+![](PA1_template_files/figure-html/mean_steps-1.png)<!-- -->
 
 
 ##2. If you do not understand the difference between a histogram and a barplot, research the difference between them. Make a histogram of the total number of steps taken each day
@@ -96,7 +96,7 @@ ggplot(totalsteps, aes(total_steps)) +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/histogram and barplot-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram_barplot-1.png)<!-- -->
 
 
 ##3. Calculate and report the mean and the median of the total number of steps taken per day
@@ -141,7 +141,7 @@ ggplot(pattern, aes(interval, mean_interval)) +
   labs(title = "Interval Activity Pattern", x = "Day Interval", y = "Mean Steps")
 ```
 
-![](PA1_template_files/figure-html/activity pattern-1.png)<!-- -->
+![](PA1_template_files/figure-html/activity_pattern-1.png)<!-- -->
 
 
 ##2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -206,7 +206,7 @@ ggplot(total_steps_fill, aes(total_steps_fill)) +
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/histogram fill-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram_fill-1.png)<!-- -->
 
 ```r
 total_steps_fill %>% summarise(mean_total_step_fill = mean(total_steps_fill, na.rm=TRUE))
@@ -272,5 +272,5 @@ ggplot(pattern_week, aes(interval, mean_step_interval)) +
   labs(title = "Interval Activity Pattern: Weekend vs. Weekday", x = "Day Interval", y = "Mean Steps")
 ```
 
-![](PA1_template_files/figure-html/panel plot-1.png)<!-- -->
+![](PA1_template_files/figure-html/panel_plot-1.png)<!-- -->
 
