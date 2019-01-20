@@ -5,6 +5,7 @@ output:
     keep_md: true
 ---
 
+
 # Loading and preprocessing the data
 
 ```{r load data, echo=TRUE}
