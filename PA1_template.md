@@ -2,9 +2,9 @@
 title: "Coursera Reproducible Research Project 1"
 output: 
   html_document:
-    keep_md: true
+    keep_md: yes
 ---
-
+  
 # Loading and preprocessing the data
 
 
@@ -76,7 +76,7 @@ head(totalsteps, 10)
 #line plot with total number of steps per day
 
 ggplot(totalsteps, aes(date, total_steps)) +
-  geom_line() +
+  geom_line(color = "blue") +
   labs(title = "Total Steps per Day", x = "Date", y = "Steps")
 ```
 
@@ -273,3 +273,4 @@ ggplot(pattern_week, aes(interval, mean_step_interval)) +
 ```
 
 ![](PA1_template_files/figure-html/panel plot-1.png)<!-- -->
+
