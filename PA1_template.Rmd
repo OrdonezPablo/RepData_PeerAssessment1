@@ -170,3 +170,4 @@ ggplot(pattern_week, aes(interval, mean_step_interval)) +
   labs(title = "Interval Activity Pattern: Weekend vs. Weekday", x = "Day Interval", y = "Mean Steps")
 
 ```
+
